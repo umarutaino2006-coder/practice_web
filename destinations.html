@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="destinations.html">Destinations</a>
             <a href="activities.html">Activities</a>
@@ -27,8 +28,16 @@
 
     <main class="page-content">
         <h2>Choose your next escape</h2>
+
+        <div class="filter-bar" aria-label="Destination filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="mountain">Mountain</button>
+            <button class="filter-btn" type="button" data-filter="beach">Beach</button>
+            <button class="filter-btn" type="button" data-filter="culture">Culture</button>
+        </div>
+
         <div class="info-grid">
-            <article class="info-card">
+            <article class="info-card reveal" data-category="mountain">
                 <img src="https://www.erikastravelventures.com/wp-content/uploads/2018/10/IMG_6858-e1540290382435.jpg" alt="Swiss Alps">
                 <h3><a href="plan_trip.html">Swiss Alps</a></h3>
                 <p>Alpine trails, glacier views, and cozy mountain lodges for unforgettable hiking adventures.</p>
@@ -39,7 +48,7 @@
                 </ul>
             </article>
 
-            <article class="info-card">
+            <article class="info-card reveal" data-category="mountain">
                 <img src="https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/487512532_1092691842904067_7927207916215320513_n.jpg?stp=dst-jpg_tt6&cstp=mx1367x1367&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8KLtVwDQMN0Q7kNvwEIoMhg&_nc_oc=Adqbtv1xPbm8TACq5LK8SXDTI_6raIiVjCcBnveFXCcIcRt_TO7ZUEJWBbeVOK6EuQo&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=4_rpXSsYSPakKD5MYxwNbg&_nc_ss=7b2a8&oh=00_AQEgP0-zqSwPiV5Dz0oKHSxVEUMYAy3emMRe_gZ3B76I9w&oe=6A87E925" alt="Banff, Canada">
                 <h3><a href="plan_trip.html">Banff, Canada</a></h3>
                 <p>Crystal lakes, towering peaks, and world-class outdoor activities in every season.</p>
@@ -50,8 +59,8 @@
                 </ul>
             </article>
 
-            <article class="info-card">
-                <img src="https://www.outlooktravelmag.com/media/bali-1-1679062958.profileImage.2x-1536x884.webp" alt="Bali, Indonesia">
+            <article class="info-card reveal" data-category="beach">
+                <img src="https://media.cntraveler.com/photos/675f30d1796d888fdbf7c595/16:9/w_2580%2Cc_limit/Bark-Beach-miami_GettyImages-1540357059.jpg" alt="Bali, Indonesia">
                 <h3><a href="plan_trip.html">Bali, Indonesia</a></h3>
                 <p>Sun-kissed beaches, jungle retreats, and cultural experiences for a balanced adventure trip.</p>
                 <ul class="detail-list">
@@ -60,11 +69,23 @@
                     <li>Wellness packages</li>
                 </ul>
             </article>
+            <article class="info-card reveal" data-category="culture">
+                <img src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/698c9c594996ca12defa0101_iStock-488080276.jpg" alt="New York City, USA">
+                <h3><a href="plan_trip.html">Bali, Indonesia</a></h3>
+                <p>Iconic landmarks, world-class museums, and vibrant neighborhoods for a cultural adventure.</p>
+                <ul class="detail-list">
+                    <li>Broadway shows</li>
+                    <li>Historical tours</li>
+                    <li>Food and art experiences</li>
+                </ul>
+
+            </article>
         </div>
     </main>
 
     <footer>
         <p>Copyright &copy; 2026 Adventure Travel. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
