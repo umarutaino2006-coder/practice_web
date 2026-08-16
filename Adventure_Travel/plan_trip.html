@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | Adventure Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="activities.html">Activities</a>
+            <a href="about_us.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Plan Your Trip</h1>
+    </section>
+
+    <main class="page-content">
+        <div class="planner-layout">
+            <aside class="planner-intro contact-card">
+                <h3>Build your ideal getaway</h3>
+                <p>Tell us where you want to go, what kind of adventure you crave, and when you want to travel. We’ll help turn your ideas into a memorable itinerary.</p>
+                <ul class="detail-list">
+                    <li>Email: adventuretravel@gmail.com</li>
+                    <li>Custom recommendations</li>
+                    <li>Destination matching</li>
+                    <li>Flexible itinerary ideas</li>
+                </ul>
+            </aside>
+
+            <form class="contact-form planner-form">
+                <label>
+                    Full Name
+                    <input type="text" name="name" placeholder="Your name">
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email" name="email" placeholder="you@example.com">
+                </label>
+
+                <label>
+                    Destination
+                    <input type="text" name="destination" placeholder="Mountain, beach, city, or country">
+                </label>
+
+                <label>
+                    Trip Style
+                    <select name="trip-style">
+                        <option value="">Select a style</option>
+                        <option>Hiking & Trekking</option>
+                        <option>Beach Escape</option>
+                        <option>Adventure Sports</option>
+                        <option>Cultural Tour</option>
+                        <option>Luxury Getaway</option>
+                    </select>
+                </label>
+
+                <div class="planner-row">
+                    <label>
+                        Travel Month
+                        <input type="text" name="month" placeholder="e.g. September">
+                    </label>
+                    <label>
+                        Travelers
+                        <input type="number" name="travelers" min="1" max="20" placeholder="2">
+                    </label>
+                </div>
+
+                <label>
+                    Tell us about your trip
+                    <textarea name="message" placeholder="Describe your dream trip, budget, activities, and travel goals..."></textarea>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit">Start Planning</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 Adventure Travel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
